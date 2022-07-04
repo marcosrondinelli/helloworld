@@ -2,6 +2,7 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: ingress-clusterip-helloworld
+  namespace: helloworld
   annotations:
     ingress.kubernetes.io/rewrite-target: /
 spec:
