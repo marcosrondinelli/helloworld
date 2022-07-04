@@ -8,6 +8,5 @@ spec:
   selector:
     app: helloworld
   ports:
-    - port: 8079         # IP_EXTERNO:8079 -> Endereco p/ acessar externamente 
+    - port: 80         # IP_EXTERNO:80 -> Endereco p/ acessar externamente 
       targetPort: 8080   # Porta que o app escuta internamente
-      nodePort: 30080  # Nao faco ideia se precisa
