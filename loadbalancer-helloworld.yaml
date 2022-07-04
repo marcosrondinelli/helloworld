@@ -8,6 +8,6 @@ spec:
   selector:
     app: helloworld
   ports:
-    - port: 8079         # Porta de saída interna que o svc usa p/ se comunicar com a app 
-      targetPort: 8080   # Porta que o app escuta
-      nodePort: 30080  # Optional field. By default and for convenience, the Kubernetes control plane will allocate a port from a range (default: 30000-32767)
+    - port: 8079         # IP_EXTERNO:8079 -> Endereco p/ acessar externamente 
+      targetPort: 8080   # Porta que o app escuta internamente
+      nodePort: 30080  # Nao faco ideia se precisa
